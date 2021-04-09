@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
+<title>CS 184: Final Project</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+
+<body>
+
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2021</h1>
+<h1 align="middle">Final Project Proposal: Iridescence — Wavelength Dependent Path Tracing</h1>
+<h2 align="middle">Chetana Ramaiyer, Iris Chow, Nadia Hyder and Yichi Zhang</h2>
+
+<br><br>
+
+<div>
+<h2 align="middle">Title, Summary and Team Members:</h2>
+
+<p>The title of our project is Iridescence — Wavelength Dependent Path Tracing. We want to build on our pathtracer to include wavelength dependent reflectance functions. The ultimate goal is to support rendering of iridescent surfaces.</p>
+<p> Our team members are Chetana Ramaiyer, Iris Chow, Nadia Hyder and Yichi Zhang </p>
+
+<h3>Problem Description:</h3>
+<p> We plan to implement iridescence using spectral representations of light. This approach allows us to render objects based on different wavelengths, as the human eye would perceive them using its spectrum sensitivity distribution. We will be able to render thin film, soap bubbles, butterfly feathers. We are ultimately implementing a spectral ray tracer. This is important because we will be able to realistically render surfaces that reflect light differently based on wavelength where we otherwise wouldn’t be able to see these effects. We are anticipating a challenge in modelling multi-wavelength BRDFs and light sources as well as modelling our reflection functions.</p>
+
+<h2 align="middle">Goals and Deliverables:</h2>
+<h3>Deliverables:</h3>
+<p>We plan to deliver a fully functional pathtracer that is able to successfully render simple iridescent surfaces, specifically images of thin film like soap, CD players, peacocks, hummingbirds, etc.</p>
+<p><h3>We plan to answer the following questions:</h3></p>
+<p>1. How does the human eye’s spectrum sensitivity distribution interact with thin film surfaces? </p>
+<p>2. How much more realistic does the rendering become once you add in the effects of Iridescence?</p>
+<p>3. How to implement a path tracer that is wavelength dependent and can we model the human eye “correct” enough?</p>
+<p>We plan to evaluate the performance of our system based on how accurate the rendered image looks compared to the real reflectance iridescent objects would experience. We can also use the rendering times, and evaluate possible speed-ups.</p>
+
+<h3>With time:</h3>
+<p> If things go well, we hope to be able to render images of insects or animals with a thin film skin. We think there are a lot of cool effects that could be achieved if we incorporate the effects of iridescent into our rendering of images.</p>
+
+<h2 align="middle">Schedule:</h2>
+<p>In this section you should organize and plan the tasks and subtasks that your team will execute. Since presentations are ~4 weeks from the due-date of the proposal, you should include a set of tasks for every week.</p>
+<p><b>Week 1: </b> Read research papers, gather .dae files (we could start with a simple soap bubble though),  come up with data structures, how to represent light composing of different wavelengths, etc.</p>
+<p><b>Week 2: </b> Begin refactoring path tracer with wavelengths</p>
+<p><b>Week 3: </b> Coding and rendering.</p>
+<p><b>Week 4: </b> Render pictures, gif’s where the camera circles around a bubble / a CD disc sounds ambitious, make final presentation + deliverables</p>
+
+<h2 align="middle">Resources:</h2>
+<p>Previous projects on the same topic: https://ceciliavision.github.io/graphics/a5/ , https://kwsong.github.io/cs184_final/final_report.pdf</p>
+<p>Wikipedia article on Iridescence: https://en.wikipedia.org/wiki/Iridescence </p>
+<p> Wavelength dependent reflectance functions: https://www-users.cs.umn.edu/~gmeyer/papers/gondek-meyer-siggraph-1994.pdf </p>
+<p> Hardware resources: Personal computers </p>
+
+</body>
+</html>
